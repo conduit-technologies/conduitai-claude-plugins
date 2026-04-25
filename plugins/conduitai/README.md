@@ -37,9 +37,11 @@ Tokens can be revoked from the `/mcp` menu (**Clear authentication**) or from yo
 | :--- | :--- |
 | `authenticate` | Open browser to sign in with conduitAI |
 | `auth_status` | Check current sign-in state |
-| `search_catalog` | Search MCP servers, agents, skills, prompts, plugins |
+| `search_catalog` | Keyword search MCP servers, agents, skills, prompts, plugins |
+| `semantic_search_catalog` | **v0.2.0** — Natural-language search (vector + FTS hybrid) |
 | `get_asset_details` | Fetch a single asset by slug |
 | `browse_catalog` | List assets with filters + sort |
+| `ask_conduitai` | **v0.2.0** — RAG-powered Q&A grounded in the conduitAI knowledge base |
 | `list_installed` | Show your installed assets |
 | `install_asset` | Install an asset into the current project |
 | `uninstall_asset` | Remove an installed asset |
