@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "conduitai": {
+      "type": "http",
+      "url": "https://mcp.conduitai.app/mcp"
+    }
+  }
+}

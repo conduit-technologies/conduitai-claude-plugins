@@ -1,0 +1,30 @@
+{
+  "name": "conduitai-plugins",
+  "owner": {
+    "name": "conduitAI",
+    "email": "contactus@conduitai.app"
+  },
+  "metadata": {
+    "description": "Official conduitAI plugin marketplace — search, browse, and install MCP servers, agents, skills, and prompts from the conduitAI catalog directly from Claude Code.",
+    "homepage": "https://conduitai.app",
+    "repository": "https://github.com/conduit-technologies/conduitai-claude-plugins"
+  },
+  "plugins": [
+    {
+      "name": "conduitai",
+      "source": "./plugins/conduitai",
+      "description": "Search, browse, and install MCP servers, agents, skills, prompts, and plugins from the conduitAI catalog. Sign in once with /mcp to pull content tied to your conduitAI account.",
+      "version": "0.1.0",
+      "author": {
+        "name": "conduitAI",
+        "email": "contactus@conduitai.app"
+      },
+      "homepage": "https://conduitai.app",
+      "repository": "https://github.com/conduitai-app/mcp-server",
+      "license": "MIT",
+      "category": "marketplace",
+      "tags": ["mcp", "marketplace", "discovery", "catalog", "ai-tools"],
+      "keywords": ["conduitai", "mcp", "marketplace", "catalog", "discovery"]
+    }
+  ]
+}
