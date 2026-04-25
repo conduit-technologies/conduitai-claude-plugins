@@ -83,16 +83,6 @@ OAuth metadata is published at:
 
 Claude Code's default `http://localhost:PORT/callback` redirect URI is supported via DCR; no client pre-registration required.
 
-## Screenshots
-
-| Screen | Description |
-| :--- | :--- |
-| ![OAuth consent](docs/screenshots/01-oauth-consent.png) | The "Authorize MCP Access" consent screen on `conduitai.app/oauth/authorize` |
-| ![Search results](docs/screenshots/02-search-results.png) | A `search_catalog` response inside Claude Code |
-| ![Install success](docs/screenshots/03-install-success.png) | Asset install confirmation + success state |
-
-*(Screenshots will be added in the v0.1.0 release.)*
-
 ## Tested with
 
 - **Claude Code** 2.1.x and later
