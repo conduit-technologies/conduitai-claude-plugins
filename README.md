@@ -57,13 +57,15 @@ The plugin lists every installed asset (MCP servers, agents, skills, prompts, pl
 
 ## Tools exposed by the plugin
 
-The bundled MCP server (`https://mcp.conduitai.app/mcp`) provides 8 tools, all callable by Claude in response to natural-language requests:
+The bundled MCP server (`https://mcp.conduitai.app/mcp`) provides 10 tools, all callable by Claude in response to natural-language requests:
 
 | Tool | Purpose | Auth required |
 | :--- | :--- | :---: |
-| `search_catalog` | Find assets by query, type, sort, verified-only filter | Optional |
+| `search_catalog` | Find assets by query, type, sort, verified-only filter (keyword) | Optional |
+| `semantic_search_catalog` | **v0.2.0** — Natural-language search combining vector similarity + full-text rank. Best for "find me a tool that does X" queries | Optional |
 | `browse_catalog` | List assets with filters and sort order | Optional |
 | `get_asset_details` | Full details for a single asset by slug | Optional |
+| `ask_conduitai` | **v0.2.0** — RAG-powered Q&A grounded in the conduitAI knowledge base, with cited sources | Optional |
 | `install_asset` | Install an MCP server, agent, skill, prompt, or plugin into the current project | ✅ |
 | `uninstall_asset` | Remove an installed asset | ✅ |
 | `list_installed` | Show your currently installed assets | ✅ |
@@ -115,16 +117,20 @@ claude --plugin-dir ./plugins/conduitai
 
 ## Roadmap
 
-**v0.1.0** *(current)* — Catalog discovery + install/uninstall + listing.
+**v0.2.0** *(current)* — Adds AI-augmented discovery:
 
-**v0.2.0** *(planned)* — AI-augmented discovery and project planning:
+- `semantic_search_catalog` — natural-language search beyond keywords (vector + FTS)
+- `ask_conduitai` — RAG-powered Q&A grounded in the conduitAI knowledge base
 
-- `recommend_assets` — given a project description or stage, recommend tools (no need to know what to search for)
-- `ask_conduitai` — RAG-powered help from the conduitAI knowledge base
-- `semantic_search_catalog` — natural-language search beyond keywords
-- `find_project_gaps` — "what's missing from my AI agent setup?"
+**v0.3.0** *(planned)* — Asset evaluation + library management:
+
 - `analyze_repo` — analyze any GitHub URL with AI (safety / maintenance signals)
 - `bookmark_asset` / `list_bookmarks` — save assets for later
+
+**v0.4.0+** *(planned, requires backend work)*:
+
+- `recommend_assets` — given a project description, recommend tools (no need to know what to search for)
+- `find_project_gaps` — "what's missing from my AI agent setup?"
 
 ## Reporting issues
 
