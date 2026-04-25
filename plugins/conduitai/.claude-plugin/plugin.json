@@ -1,7 +1,7 @@
 {
   "name": "conduitai",
   "description": "Search, browse, and install MCP servers, agents, skills, prompts, and plugins from the conduitAI catalog. Sign in once with /mcp to pull content tied to your conduitAI account.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "conduitAI",
     "email": "contactus@conduitai.app",
