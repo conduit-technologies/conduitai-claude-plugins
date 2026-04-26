@@ -92,8 +92,20 @@ Claude Code's default `http://localhost:PORT/callback` redirect URI is supported
 
 ## Updating
 
+By default, third-party Claude Code marketplaces (this is one) have **auto-update disabled**. To get new versions automatically:
+
+1. In Claude Code, run `/plugin`
+2. Navigate to the **Marketplaces** tab
+3. Select **conduitai-plugins**
+4. Choose **Enable auto-update**
+
+When auto-update is on, Claude Code refreshes the marketplace catalog at startup, updates the plugin to the latest version, and prompts you to run `/reload-plugins`.
+
+If you prefer to update manually:
+
 ```text
 /plugin marketplace update conduitai-plugins
+/reload-plugins
 ```
 
 Plugin versions are pinned via the `version` field in [`marketplace.json`](./.claude-plugin/marketplace.json). New releases are published by bumping that field, so you only get updates when we ship them — not on every commit.
