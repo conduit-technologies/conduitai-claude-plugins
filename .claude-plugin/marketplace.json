@@ -14,13 +14,13 @@
       "name": "conduitai",
       "source": "./plugins/conduitai",
       "description": "Search, browse, and install MCP servers, agents, skills, prompts, and plugins from the conduitAI catalog. Sign in once with /mcp to pull content tied to your conduitAI account.",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "author": {
         "name": "conduitAI",
         "email": "contactus@conduitai.app"
       },
       "homepage": "https://conduitai.app",
-      "repository": "https://github.com/conduitai-app/mcp-server",
+      "repository": "https://github.com/conduit-technologies/conduitai-claude-plugins",
       "license": "MIT",
       "category": "marketplace",
       "tags": ["mcp", "marketplace", "discovery", "catalog", "ai-tools"],
