@@ -57,7 +57,7 @@ The plugin lists every installed asset (MCP servers, agents, skills, prompts, pl
 
 ## Tools exposed by the plugin
 
-The bundled MCP server (`https://mcp.conduitai.app/mcp`) provides 10 tools, all callable by Claude in response to natural-language requests:
+The bundled MCP server (`https://mcp.conduitai.app/mcp`) provides 14 tools, all callable by Claude in response to natural-language requests:
 
 | Tool | Purpose | Auth required |
 | :--- | :--- | :---: |
@@ -66,6 +66,10 @@ The bundled MCP server (`https://mcp.conduitai.app/mcp`) provides 10 tools, all 
 | `browse_catalog` | List assets with filters and sort order | Optional |
 | `get_asset_details` | Full details for a single asset by slug | Optional |
 | `ask_conduitai` | **v0.2.0** — RAG-powered Q&A grounded in the conduitAI knowledge base, with cited sources | Optional |
+| `analyze_repo` | **v0.3.0** — Analyze any GitHub repo for safety + maintenance signals | Optional |
+| `bookmark_asset` | **v0.3.0** — Save a catalog asset to your bookmarks (capacity: 1000 per user) | ✅ |
+| `list_bookmarks` | **v0.3.0** — List your bookmarked assets with filters + pagination | ✅ |
+| `unbookmark_asset` | **v0.3.0** — Remove a bookmark by id or (slug, asset_type) | ✅ |
 | `install_asset` | Install an MCP server, agent, skill, prompt, or plugin into the current project | ✅ |
 | `uninstall_asset` | Remove an installed asset | ✅ |
 | `list_installed` | Show your currently installed assets | ✅ |
@@ -129,15 +133,15 @@ claude --plugin-dir ./plugins/conduitai
 
 ## Roadmap
 
-**v0.2.0** *(current)* — Adds AI-augmented discovery:
+**v0.3.0** *(current)* — Asset evaluation + library management:
+
+- `analyze_repo` — analyze any GitHub URL for safety + maintenance signals
+- `bookmark_asset` / `list_bookmarks` / `unbookmark_asset` — save catalog assets for later (capacity: 1000 per user)
+
+**v0.2.0** — AI-augmented discovery:
 
 - `semantic_search_catalog` — natural-language search beyond keywords (vector + FTS)
 - `ask_conduitai` — RAG-powered Q&A grounded in the conduitAI knowledge base
-
-**v0.3.0** *(planned)* — Asset evaluation + library management:
-
-- `analyze_repo` — analyze any GitHub URL with AI (safety / maintenance signals)
-- `bookmark_asset` / `list_bookmarks` — save assets for later
 
 **v0.4.0+** *(planned, requires backend work)*:
 
