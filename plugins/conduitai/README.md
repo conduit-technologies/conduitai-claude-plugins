@@ -44,6 +44,10 @@ Auth requirements mirror the conduitai.app web UI — public for catalog discove
 | `get_asset_details` | Fetch a single asset by slug | — |
 | `browse_catalog` | List assets with filters + sort | — |
 | `ask_conduitai` | **v0.2.0** — RAG-powered Q&A grounded in the conduitAI knowledge base | ✅ |
+| `analyze_repo` | **v0.3.0** — Analyze any GitHub repo for safety + maintenance signals | — |
+| `bookmark_asset` | **v0.3.0** — Save a catalog asset to your bookmarks (cap: 1000) | ✅ |
+| `list_bookmarks` | **v0.3.0** — List your bookmarked assets with filters + pagination | ✅ |
+| `unbookmark_asset` | **v0.3.0** — Remove a bookmark by id or (slug, type) | ✅ |
 | `list_installed` | Show your installed assets | ✅ |
 | `install_asset` | Install an asset into the current project | ✅ |
 | `uninstall_asset` | Remove an installed asset | ✅ |
